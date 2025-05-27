@@ -113,9 +113,17 @@
 }
 
 @layer base {
+  html,
+  body,
+  #__next,
+  body > div {
+    height: 100%;
+  }
+
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
